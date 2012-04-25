@@ -2,19 +2,17 @@ module JobInterview
   module FizzBuzz
     
     def fizz_buzz(max)
-      acc = []
-      (1..max).each do |n|
-        if ((n % 3 == 0) && (n % 5 == 0))
-          acc << "FizzBuzz"
-        elsif (n % 3 == 0)
-          acc << "Fizz"
-        elsif (n % 5 == 0)
-          acc << "Buzz"
+      1.upto(max).map do |n|
+        if n % 15 == 0
+          "FizzBuzz"
+        elsif n % 3 == 0
+          "Fizz"
+        elsif n % 5 == 0
+          "Buzz"
         else
-          acc << n
+          n
         end
       end
-      return acc
     end
     
   end
