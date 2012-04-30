@@ -1,9 +1,10 @@
-require File.expand_path('../job_interview/fizz_buzz', __FILE__)
-require File.expand_path('../job_interview/fibonacci', __FILE__)
-require File.expand_path('../job_interview/knapsack' , __FILE__)
-require File.expand_path('../job_interview/quine' , __FILE__)
-require File.expand_path('../job_interview/primes' , __FILE__)
-require File.expand_path('../job_interview/questions' , __FILE__)
-require File.expand_path('../job_interview/answer' , __FILE__)
+$LOAD_PATH << File.dirname(__FILE__)
+require 'job_interview/fizz_buzz'
+require 'job_interview/fibonacci'
+require 'job_interview/knapsack'
+require 'job_interview/quine'
+require 'job_interview/primes'
+require 'job_interview/questions'
+require 'job_interview/answer'
 module JobInterview
 end
